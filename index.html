@@ -23,13 +23,14 @@
 <body>
   <!-- Hero -->
   <header>
+    <img src="images/herotop.png" alt="Blocmarc"/>
     <nav class="container">
       <div class="one-half">
-        <a href="index.html" class="site-logo"><img src="images/site-logo.png" alt="Blocmarc"/></a>
+        <a href="index.html" class="site-logo"><img src="images/site-logo.svg" height="43px" alt="Blocmarc"/></a>
       </div>
       <div>
         <ul>
-          <li><a href="signin.html">Sign In</a></li>
+          <li class="btn-no-outline"><a href="signin.html">Sign In</a></li>
           <li class="btn-outline"><a href="signup.html">Sign Up</a></li>
         </ul>
       </div>
@@ -39,48 +40,47 @@
       <h1 class="animated fadeIn">Make your marc</h1>
       <h2>Blocmarc lets you collect, sort and share inspiration<br/>so that you'll never forget an idea.</h2>
       <a href="signup.html" class="btn">Get started for FREE!</a>
-      <img src="images/herotop.png" alt="Blocmarc"/>
     </div>
   </header>
 
   <!-- Navbar -->
-  <nav class="navbar">
+  <nav>
+    <section class="navbar">
+      <div class="notes-block one-fifth">
+        <ul>
+          <li><a href=""><i class="fa fa-pencil"></i></a></li>
+          <li><a href="">Create notes</a></li>
+        </ul>
+      </div>
 
-    <div class="notes-block one-fifth">
-      <ul>
-        <li><a href="">fa-pencil</a></li>
-        <li><a href="">Create notes</a></li>
-      </ul>
-    </div>
+      <div class="checklists-block one-fifth">
+        <ul>
+          <li><a href=""><i class="fa fa-check"></i></a></li>
+          <li><a href="">Make checklists</a></li>
+        </ul>
+      </div>
 
-    <div class="checklists-block one-fifth">
-      <ul>
-        <li><a href="">fa-check</a></li>
-        <li><a href="">Make checklists</a></li>
-      </ul>
-    </div>
+      <div class="links-block one-fifth">
+        <ul>
+          <li><a href=""><i class="fa fa-chain"></i></a></li>
+          <li><a href="">Add links</a></li>
+        </ul>
+      </div>
 
-    <div class="links-block one-fifth">
-      <ul>
-        <li><a href="">fa-chain</a></li>
-        <li><a href="">Add links</a></li>
-      </ul>
-    </div>
+      <div class="images-block one-fifth">
+        <ul>
+          <li><a href=""><i class="fa fa-image"></i></a></li>
+          <li><a href="">Save images</a></li>
+        </ul>
+      </div>
 
-    <div class="images-block one-fifth">
-      <ul>
-        <li><a href="">fa-image</a></li>
-        <li><a href="">Save images</a></li>
-      </ul>
-    </div>
-
-    <div class="browser-block one-fifth">
-      <ul>
-        <li><a href="">fa-star</a></li>
-        <li><a href="">Save from browser</a></li>
-      </ul>
-    </div>
-
+      <div class="browser-block one-fifth">
+        <ul>
+          <li><a href=""><i class="fa fa-star"></i></a></li>
+          <li><a href="">Save from browser</a></li>
+        </ul>
+      </div>
+    </section>  
   </nav>
 
   <main role="main">
@@ -209,11 +209,7 @@
               <a href="signup.html" class="btn">Get Casual</a>
           </div>
         </div>
-      </div>
-    </section>
 
-    <section class="pricing">
-      <div class="container">
         <div class="one-third">
           <div class="box middle">
             <h3>PROFESSIONAL</h3>
@@ -227,11 +223,7 @@
               <a href="signup.html" class="btn">Get Professional</a>
           </div>
         </div>
-      </div>
-    </section>
 
-    <section class="pricing">
-      <div class="container">
         <div class="one-third">
           <div class="box">
             <h3>EXPERT</h3>
@@ -248,9 +240,10 @@
       </div>
     </section>
 
+<!-- Chris code
     <script type="text/javascript">
       $(this).click();
-    </script>
+    </script> -->
 </main>
   
   <!-- Footer -->

@@ -73,3 +73,167 @@ blockquote {
   min-height: 1px;
   margin:0 2% 20px;
 }
+
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+  .one-half {
+    width: 46%;
+  }
+  .one-third {
+    width: 29.33333%;
+  }
+  .one-fourth {
+    width: 21%;
+  }
+  .one-fifth {
+    width: 16%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+
+/* HEADER */
+header {
+  height: 85vh;
+  color: #FFFFFF;
+  background: linear-gradient(180deg, rgba(254, 0, 146, 1) 0%, rgba(242, 14, 106, 1) 28.53%, rgba(231, 26, 70, 1) 59.11%, rgba(224, 33, 48, 1) 84.03%, rgba(222, 36, 40, 1) 100%);
+}
+
+header nav {
+  padding:2em 0;
+}
+
+header nav ul {
+  display: inline;
+  text-align: right;
+  float: right;
+  margin: 0;
+  font-size: 14px;
+}
+
+header nav ul > li {
+  list-style-type: none;
+  display: inline-block;
+  margin: 0 15px;
+}
+
+header nav ul > li.btn-outline {
+  padding:10px 40px;
+  border:.5px solid #FFFFFF;
+  border-radius:4px;
+}
+
+header nav ul > li.btn-outline:hover {
+  background:#FFFFFF;
+}
+
+header nav ul > li.btn-no-outline {
+  padding:10px 40px;
+  border-radius:4px;
+  margin-right: 2px;
+}
+
+header nav ul > li.btn-no-outline:hover {
+  background:#FFFFFF;
+}
+
+header nav ul > li > a {
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+header nav ul > li.btn-outline:hover > a {
+  color: #fe0092
+}
+
+header nav ul > li.btn-no-outline:hover > a {
+  color: #fe0092
+}
+
+header .hero {
+  text-align: center;
+  display: block;
+  position: relative;
+}
+
+header .hero h1 {
+  font-size: 48px;
+  margin: 108px 0 0;
+}
+
+header .hero h2 {
+  font-size: 30px;
+  line-height: 36px;
+  letter-spacing: .5px;
+  font-weight: 100;
+  padding-bottom: 30px;
+}
+
+header > img {
+  position: absolute;
+  width: 100%;
+  top: -16%;
+}
+
+/* BUTTONS */
+.btn {
+   border-radius: 4px;
+   color:#FFFFFF;
+   font-weight: 700;
+   letter-spacing: .5px;
+   text-decoration: none;
+   padding:10px 30px;
+   background: #4ac0bc;
+   box-shadow: 2px 2px 5px 0px rgba(86, 31, 46, 0.68);
+}
+
+.btn:hover {
+  background: #FFFFFF;
+  color: #fe0092;
+}
+
+
+/* NAVBAR */
+nav .navbar {
+  position: relative;
+  width: 100%;
+  height: 15vh;
+  background-color: #FFFFFF;
+  padding-top: 8px;
+}
+
+nav ul {
+  text-align: center;
+  float: center;
+  padding-left: 0;
+}
+
+nav ul > li {
+  list-style-type: none;
+  text-align: center;
+  color: #b1b1b1
+}
+
+nav ul > li > a {
+  text-decoration: none;
+  color: #b1b1b1;
+  font-size: 14px;
+  letter-spacing: .5px;
+}
+
+nav .fa {
+  font-size: 31px;
+  padding-bottom: 12px;
+}
