@@ -237,3 +237,8 @@ nav .fa {
   font-size: 31px;
   padding-bottom: 12px;
 }
+
+nav .navbar .container {
+  width: 1170px;
+  float: center;
+}
