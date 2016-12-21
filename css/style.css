@@ -106,8 +106,19 @@ blockquote {
 
 /* HEADER */
 header {
-  height: 85vh;
+  height: 100vh;
   color: #FFFFFF;
+  background-image: url(../images/herotop.png);
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+}
+
+@media (min-width: 600px) {
+  header { height: 85vh; }
+}
+
+.colorhero {
   background: linear-gradient(180deg, rgba(254, 0, 146, 1) 0%, rgba(242, 14, 106, 1) 28.53%, rgba(231, 26, 70, 1) 59.11%, rgba(224, 33, 48, 1) 84.03%, rgba(222, 36, 40, 1) 100%);
 }
 
