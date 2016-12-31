@@ -26,6 +26,7 @@ h3, h4, h6 {
   color: 000000;
   font-size: 16px;
   font-weight: 700;
+  margin: 0;
 }
 
 h5 {
@@ -87,7 +88,13 @@ blockquote {
 
 @media (min-width: 768px) {
   .container {
-    width: 750px;
+    width: 700px;
+  }
+  #top-nav .one-half {
+    width: 50%;
+  }
+  #pricing-ipad .one-third {
+    width: 33.33333%;
   }
 }
 
@@ -156,11 +163,22 @@ header {
   width: 100%;
   height: 85vh;
   z-index: 1;
+}
 
+@media (max-width: 600px) {
+  .colorhero {
+    height: 100vh;
+  }
 }
 
 header nav {
   padding:2em 0;
+}
+
+@media (max-width: 600px) {
+  header nav {
+    margin-top: 20%;
+  }
 }
 
 header nav ul {
@@ -210,16 +228,58 @@ header nav ul > li.btn-no-outline:hover > a {
   color: #fe0092
 }
 
+
+
+header .site-logo img {
+  display: block;
+  float: left;
+}
+
+@media (max-width: 600px) {
+  header .site-logo img {
+    float: none;
+  }
+  header h2 br {
+    display: none;
+  }
+}
+
 header .hero {
   text-align: center;
   display: block;
   position: relative;
 }
 
+@media (max-width: 600px) {
+  header .hero {
+    padding: 0 7%;
+  }
+}
+
 header .hero h1 {
   font-size: 48px;
   margin-top: 8%;
 }
+
+@media (max-width: 800px) {
+  header .hero h1 {
+    margin-top: 24%;
+  }
+}
+
+@media (max-width: 600px) {
+  header .hero h1 {
+    margin-top: 0%;
+  }
+}
+
+@media (max-width: 400px) {
+  header .hero h1 {
+    margin-top: 0;
+    font-size: 46px;
+  }
+}
+
 
 header .hero h2 {
   font-size: 30px;
@@ -229,20 +289,37 @@ header .hero h2 {
   padding-bottom: 30px;
 }
 
+@media (max-width: 400px) {
+  header .hero h2 {
+    font-size: 21px;
+    line-height: 30px;
+    padding-bottom: 14px;
+  }
+}
+
 header > img {
   position: absolute;
   width: 100%;
   top: -16%;
 }
 
-@media tv (min-width: 1280px) {
+
+
+/*@media tv (min-width: 1280px) {
   header .hero h1 {
     font-size: 78px
   }
   header .hero h2 {
-    font-size: 46px
+    font-size: 46px;
     line-height: 55px;
     letter-spacing: .7px;
+  }
+}*/
+
+
+@media (max-width: 600px) {
+  .sign-in-up {
+    display: none;
   }
 }
 
@@ -253,14 +330,40 @@ header > img {
    font-weight: 700;
    letter-spacing: .5px;
    text-decoration: none;
-   padding:10px 30px;
+   padding: 10px 30px;
    background: #4ac0bc;
    box-shadow: 2px 2px 5px 0px rgba(86, 31, 46, 0.68);
+   display: block;
+   width: 180px;
+   margin-left: auto;
+   margin-right: auto;
+   margin-bottom: 10px;
 }
 
 .btn:hover {
   background: #FFFFFF;
   color: #fe0092;
+}
+
+.btn-mobile-sign-in {
+  border-radius: 4px;
+  color:#FFFFFF;
+  letter-spacing: .5px;
+  text-decoration: none;
+  padding: 10px 30px;
+  display: none;
+  width: 180px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 10px;
+  border: .5px solid #fff;
+  font-weight: 100;
+}
+
+@media (max-width: 600px) {
+  .btn-mobile-sign-in {
+    display: block;
+  }
 }
 
 
@@ -277,7 +380,7 @@ nav .navbar {
   width: 100%;
   height: 15vh;
   background-color: #FFFFFF;
-  padding-top: 8px;
+  padding-top: 16px;
   top: 0;
   z-index: 2;
 }
@@ -307,9 +410,28 @@ nav .fa {
 }
 
 nav .navbar .container {
-  width: 1170px;
-  float: center;
+  width: 1024px;
+  padding-left: 40px;
 }
+
+@media (max-width: 1050px) {
+  nav .navbar .container {
+    width: 700px;
+    padding-left: 20px;
+  }
+}
+
+nav .navbar .one-fifth {
+  display: inline-block;
+  width: 19%;
+}
+
+@media (max-width: 600px) {
+  .navbar {
+    display: none;
+  }
+}
+
 
 /* MAIN */
 main {
@@ -317,6 +439,12 @@ main {
   z-index: 1000;
   position: relative;
   top: 85vh;
+}
+
+@media (max-width: 600px) {
+  main {
+    top: 100vh;
+  }
 }
 
 .benefits-gray {
@@ -364,6 +492,14 @@ main {
 .benefits-text-right {
   margin-top: 27%;
   width: 75%;
+}
+
+@media (max-width: 800px) {
+  .benefits-text-right {
+    margin-top: 2%;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 .benefits-text-right p {
@@ -473,6 +609,22 @@ main {
   height: 85vh;
 }
 
+@media (max-width: 800px) {
+  .color-bottom-hero {
+    height: 51vh;
+  }
+}
+
+.pricing .container {
+  width: 1074px;
+}
+
+@media (max-width: 800px) {
+  .pricing .container {
+    width: 700px;
+  }
+
+}
 .pricing {
   height: 85vh;
   color: #FFFFFF;
@@ -483,17 +635,102 @@ main {
   top: 0;
 }
 
+@media (max-width: 800px) {
+  .pricing {
+    height: 51vh;
+  }
+}
+
 .pricing-box {
   width: 340px;
-  height: 400px;
+  height: 450px;
   background: rgba(134, 0, 66, .4);
   border-radius: 4px;
   display: block;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 25%;
+  margin-top: 20%;
+  position: relative;
+
 }
 
-/*#casual {
-  float: right;
-}*/
+@media (max-width: 800px) {
+  .pricing-box {
+    width: 220px;
+    height: 424px;
+  }
+}
+
+.pricing-box h3 {
+    text-align: center;
+    padding-top: 16%;
+    letter-spacing: 10px;
+    left: 0;
+    right: 0;
+    top: 0;
+    text-indent: 10px;
+    font-size: 13px;
+}
+
+@media (max-width: 800px) {
+  .pricing-box h3 {
+    letter-spacing: 6px;
+  }
+}
+
+.pricing-box h4 {
+    text-align: center;
+    font-size: 80px;
+    margin-top: 6px;
+}
+
+#casual {
+    font-size: 50px;
+    margin-top: 18px;
+    line-height: normal;
+}
+
+.pricing-box h4 span {
+  font-size: 25px;
+  vertical-align: middle;
+}
+
+.pricing-box h4 .month {
+  font-weight: 200;
+}
+
+.pricing-box ul {
+  text-align: center;
+  font-weight: 200;
+  text-decoration: none;
+  padding: 0;
+}
+
+.pricing-box ul li {
+  display: block;
+  margin-bottom: 20px;
+  font-size: 20px;
+  letter-spacing: .25px;
+}
+
+.pricing-box .btn {
+    position: absolute;
+    bottom: 40px;
+    left: 20px;
+    right: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 175px;
+    text-align: center;
+}
+
+@media (max-width: 800px) {
+  .pricing-box .btn {
+    bottom: 10px;
+    left: 10px;
+    right: 10px;
+    width: 123px;
+  }
+}
+
+
