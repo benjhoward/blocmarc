@@ -51,7 +51,7 @@
 
   <!-- Navbar -->
 
-  <nav class="scrollstick">
+  <nav>
     <section class="navbar">
       <div class="container">
         <div class="notes-block one-fifth">
@@ -328,7 +328,18 @@
   </footer>
 
 <script>
-$( "nav.scrollstick" ).scrollTop( 300 );
+
+  var nb = $(".navbar");
+
+  $(window).scroll(function() {
+    if( $(this).scrollTop() > 100 ){
+      nb.addClass("navbar-scrolled");
+    }
+    else {
+      nb.removeClass("navbar-scrolled");
+    }
+  });
+
 </script>
 
 </body>
