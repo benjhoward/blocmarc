@@ -297,7 +297,7 @@ header .hero h1 {
   margin-top: 8%;
 }
 
-@media (min-height: 1080px) {
+@media (min-height: 900px) {
   header .hero h1 {
     margin-top: 20%;
     margin-bottom: 40px;
@@ -334,7 +334,7 @@ header .hero h2 {
   padding-bottom: 30px;
 }
 
-@media (min-height: 1080px) {
+@media (min-height: 900px) {
   header .hero h2 {
     font-size: 34px;
     line-height: 42px;
@@ -428,7 +428,7 @@ nav {
   top: 85vh;
 }
 
-@media (min-height: 1080px) {
+@media (min-height: 900px) {
   nav {
     top: 88vh;
   }
@@ -450,7 +450,7 @@ nav .navbar {
   z-index: 2;
 }
 
-@media (min-height: 1080px) {
+@media (min-height: 900px) {
   nav .navbar {
     height: 14vh;
   }
@@ -492,7 +492,7 @@ nav .navbar .container {
   top: -2px;
 }
 
-@media (min-height: 1080px) {
+@media (min-height: 900px) {
   nav .navbar .container {
     width: 1200px;
     top: 0px;
@@ -544,9 +544,9 @@ main {
   height: 85vh;
 }
 
-@media (min-height: 1080px) {
+@media (min-height: 900px) {
   .benefits-gray {
-    height: 56vh;
+    height: 62vh;
     width: 100%;
   }
 }
@@ -759,9 +759,9 @@ main {
   height: 85vh;
 }
 
-@media (min-height: 1080px) {
+@media (min-height: 900px) {
   .benefits-white {
-    height: 56vh;
+    height: 62vh;
     width: 100%;
   }
 }
@@ -988,7 +988,7 @@ main {
   height: 85vh;
 }
 
-@media (min-height: 1080px) {
+@media (min-height: 900px) {
   .color-bottom-hero {
     height: 60vh;
   }
@@ -1046,7 +1046,7 @@ main {
   top: 0;
 }
 
-@media (min-height: 1080px) {
+@media (min-height: 900px) {
   .pricing {
     height: 60vh;
   }
