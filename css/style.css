@@ -1,6 +1,6 @@
-html, body{
+/*html, body{
   overflow-x: hidden;
-}
+}*/
 
 body {
   font-family: 'Catamaran', Helvetica, sans-serif;
@@ -486,6 +486,10 @@ nav ul > li > a {
   color: #b1b1b1;
   font-size: 14px;
   letter-spacing: .5px;
+}
+
+a.nav-active {
+    color:#ccc;
 }
 
 nav .fa {
