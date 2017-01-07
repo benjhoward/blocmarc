@@ -51,44 +51,46 @@
   <!-- Navbar -->
 
   <nav>
-    <section class="navbar">
-      <div class="container">
-        <div class="notes-block one-fifth">
-          <ul><a href="#benefits-notes">
-            <li><i class="fa fa-pencil"></i></li>
-            <li>Create notes</li></a>
-          </ul>
-        </div>
+    <div class="navbar-wrapper">
+      <section class="navbar">
+        <div class="container">
+          <div class="notes-block one-fifth">
+            <ul><a href="#benefits-notes">
+              <li><i class="fa fa-pencil"></i></li>
+              <li>Create notes</li></a>
+            </ul>
+          </div>
 
-        <div class="checklists-block one-fifth">
-          <ul><a href="#benefits-checklists">
-            <li><i class="fa fa-check"></i></li>
-            <li>Make checklists</li></a>
-          </ul>
-        </div>
+          <div class="checklists-block one-fifth">
+            <ul><a href="#benefits-checklists">
+              <li><i class="fa fa-check"></i></li>
+              <li>Make checklists</li></a>
+            </ul>
+          </div>
 
-        <div class="web-links-block one-fifth">
-          <ul><a href="#benefits-link">
-            <li><i class="fa fa-chain"></i></li>
-            <li>Add links</li></a>
-          </ul>
-        </div>
+          <div class="images-block one-fifth">
+            <ul><a href="#benefits-images">
+              <li><i class="fa fa-image"></i></li>
+              <li>Save images</li></a>
+            </ul>
+          </div>
 
-        <div class="images-block one-fifth">
-          <ul><a href="#benefits-images">
-            <li><i class="fa fa-image"></i></li>
-            <li>Save images</li></a>
-          </ul>
-        </div>
+          <div class="web-links-block one-fifth">
+            <ul><a href="#benefits-link">
+              <li><i class="fa fa-chain"></i></li>
+              <li>Add links</li></a>
+            </ul>
+          </div>
 
-        <div class="browser-block one-fifth">
-          <ul><a href="#benefits-browser">
-            <li><i class="fa fa-star"></i></li>
-            <li>Save from browser</li></a>
-          </ul>
+          <div class="browser-block one-fifth">
+            <ul><a href="#benefits-browser">
+              <li><i class="fa fa-star"></i></li>
+              <li>Save from browser</li></a>
+            </ul>
+          </div>
         </div>
-      </div>
-    </section>  
+      </section>
+    </div>  
   </nav>
 
   <main role="main">
@@ -327,6 +329,9 @@
   </footer>
 
 <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+<script src="js/jquery.easing.compatibility.js"></script>
+<script src="js/jquery.easing.js"></script>
+<script src="js/jquery.scrollTo.js"></script>
 
 
 <!-- <script async src="//fiddle.jshell.net/esterangelicaazevedo/56jtv91e/embed/"></script> 
@@ -342,7 +347,7 @@
   var stick = tall - nbheight;
 
   $(window).scroll(function() {
-    if( $(this).scrollTop() > stick ){
+    if( $(this).scrollTop() > stick -50){
       nb.addClass("navbar-scrolled");
     }
     else {
@@ -351,79 +356,29 @@
   });
 
 
-  // var nb = $(".navbar");
-  // var tall = $(window).height();
+  $(function() {
 
-  // var stick = tall - 150;
+  $('a[href*="#"]:not([href="#"])').click(function() {
 
-  // $(window).scroll(function() {
-  //   if( $(this).scrollTop() > stick ){
-  //     nb.addClass("navbar-scrolled");
-  //   }
-  //   else {
-  //     nb.removeClass("navbar-scrolled");
-  //   }
-  // });
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
 
-  // var aChildren = $(".navbar li").children(); // find the a children of the list items
-  //       var aArray = []; // create the empty aArray
-  //       for (var i=0; i < aChildren.length; i++) {    
-  //           var aChild = aChildren[i];
-  //           var ahref = $(aChild).attr('href');
-  //           aArray.push(ahref);
-  //       } // this for loop fills the aArray with attribute href values
+      var target = $(this.hash);
 
-  //       $(window).scroll(function(){
-  //           var windowPos = $(window).scrollTop(); // get the offset of the window from the top of page
-  //           var windowHeight = $(window).height(); // get the height of the window
-  //           var docHeight = $(document).height();
-            
-  //           for (var i=0; i < aArray.length; i++) {
-  //               var theID = aArray[i];
-  //               var divPos = $(theID).offset().top; // get the offset of the div from the top of page
-  //               var divHeight = $(theID).height(); // get the height of the div in question
-  //               if (windowPos >= divPos && windowPos < (divPos + divHeight)) {
-  //                   $("a[href='" + theID + "']").addClass("nav-active");
-  //               } else {
-  //                   $("a[href='" + theID + "']").removeClass("nav-active");
-  //               }
-  //           }
+      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
 
-  //           if(windowPos + windowHeight == docHeight) {
-  //               if (!$("nav li:last-child a").hasClass("nav-active")) {
-  //                   var navActiveCurrent = $(".nav-active").attr("href");
-  //                   $("a[href='" + navActiveCurrent + "']").removeClass("nav-active");
-  //                   $("nav li:last-child a").addClass("nav-active");
-  //               }
-  //           }
-  //       });
-  //   });
+      if (target.length) {
 
+        $('html, body').animate({scrollTop: target.offset().top }, 1000,"easeInOutQuart");
 
+        return false;
 
+      }
 
-  // $(document).ready(function(){
+    }
 
-  //     $(window).scroll(function(){
-  //           var window_top = $(window).scrollTop() = 0; // the "12" should equal the margin-top value for nav.stick
-  //           var div_top = $('.navbar').offset().top;
-  //               if (window_top > div_top) {
-  //                   $('.navbar').addClass('navbar-scrolled');
-  //               } else {
-  //                   $('.navbar').removeClass('navbar-scrolled');
-  //               }
-  //       });
+  });
 
-        // $(function () {
-        //     //sticky menu
-        //     var headHeight = $("header").outerHeight();
-        //     $(window).scroll(function () {
-        //         if ($(window).scrollTop() > headHeight) {
-        //             $(".navbar").addClass("navbar-scrolled");
-        //         } else {
-        //             $(".navbar").removeClass("navbar-scrolled");
-        //         }
-        //     });
+});
 
 
 </script>
