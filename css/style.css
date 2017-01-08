@@ -1411,6 +1411,10 @@ footer .copyright h6 {
   background: #de2428;
 }
 
+#logo-block:hover {
+  background: #bd1f23;
+}
+
 #logo-block ul {
   margin-top: 12px;
 }
