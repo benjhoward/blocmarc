@@ -17,6 +17,8 @@
   <link rel="stylesheet" href="css/font-awesome.css">
   <link rel="stylesheet" href="css/animate.css">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/dropit.css">
+
 
 
 
@@ -25,40 +27,153 @@
 <body class="dashboard">
 
   <!-- NAVBAR -->
+
+<!--               <ul>
+                <li><a href="#"><i class="fa fa-th"></i>All items</a></li>
+                <li><a href="#"><i class="fa fa-pencil"></i>Notes</a></li>
+                <li><a href="#"><i class="fa fa-check"></i>Checklists</a></li>
+                <li><a href="#"><i class="fa fa-image"></i>Images</a></li>
+                <li><a href="#"><i class="fa fa-link"></i>Links</a></li>
+              </ul> -->
+
+<!-- LEFT NAV  -->
+
+  <nav>
+    <section class="left-nav">
+      <div class="side-nav">
+          
+          <div class="side-menu">
+            <h4>ITEMS</h4>
+            <ul>
+                <li><a href="#"><i class="fa fa-th"></i>All items</a></li>
+                <li><a href="#"><i class="fa fa-pencil"></i>Notes</a></li>
+                <li><a href="#"><i class="fa fa-check"></i>Checklists</a></li>
+                <li><a href="#"><i class="fa fa-image"></i>Images</a></li>
+                <li><a href="#"><i class="fa fa-link"></i>Links</a></li>
+            </ul>
+          </div>          
+
+          <div class="side-menu">
+            <h4>BOXES</h4>
+            <ul>
+                <li><a href="#"><i class="fa fa-th"></i>All boxes</a></li>
+                <li><a href="#"><img src="images/footer-logo.png">Inspiration</a></li>
+                <li><a href="#"><img src="images/footer-logo.png">Work ideas</a></li>
+            </ul>
+          </div>          
+
+          <div class="side-menu">
+            <h4>ORGANIZE</h4>
+            <ul>
+                <li><a href="#"><i class="fa fa-heart"></i>Favorites</a></li>
+                <li><a href="#"><i class="fa fa-tag"></i>Tags</a></li>
+                <li><a href="#"><i class="fa fa-users"></i>Colaborators</a></li>
+            </ul>
+          </div>          
+
+          <div class="side-menu">
+            <h4>BEN HOWARD</h4>
+            <ul>
+                <li><a href="#"><img src="images/acct-icon.svg" width="30px" alt="Your account">benhoward@post-gazette.com</a></li>
+                <li><a href="#"><i class="fa fa-gear"></i>My account setings</a></li>
+                <li><a href="#"><i class="fa fa-sign-out"></i>Logout</a></li>
+            </ul>
+          </div>          
+
+      </div>
+    </section>
+  </nav>  
+
+
+<!-- HIDDEN TOP NAV -->              
+  <nav>
+    <section class="dash-menu">
+      <div class="container">
+          
+          <div class="one-fifth menu-block-blocmarc">
+            <ul>
+              <li><a href="index.html"><img src="images/site-logo.svg" width="110px" alt="Blocmarc"></a></li>
+              <li><a href="index.html"><i class="fa fa-bars"></i></a></li>
+            </ul>
+          </div>
+
+          <div class="one-fifth menu-block-items">
+            <ul>
+                <li><a href="#"><i class="fa fa-th"></i>All items</a></li>
+                <li><a href="#"><i class="fa fa-pencil"></i>Notes</a></li>
+                <li><a href="#"><i class="fa fa-check"></i>Checklists</a></li>
+                <li><a href="#"><i class="fa fa-image"></i>Images</a></li>
+                <li><a href="#"><i class="fa fa-link"></i>Links</a></li>
+            </ul>
+          </div>          
+
+        
+          <div class="one-fifth menu-block-boxes">
+            <ul>
+                <li><a href="#"><i class="fa fa-th"></i>All boxes</a></li>
+                <li><a href="#"><img class="blocmarc-box" src="images/footer-logo.png">Inspiration</a></li>
+                <li><a href="#"><img class="blocmarc-box"  src="images/footer-logo.png">Work ideas</a></li>
+            </ul>
+          </div>
+
+        
+          <div class="one-fifth menu-block-organize">
+            <ul>
+                <li><a href="#"><i class="fa fa-heart"></i>Favorites</a></li>
+                <li><a href="#"><i class="fa fa-tag"></i>Tags</a></li>
+                <li><a href="#"><i class="fa fa-users"></i>Colaborators</a></li>
+            </ul>
+          </div>
+
+        
+          <div class="one-fifth menu-block-acct">
+            <ul>
+                <li><a href="#" id="email"><img src="images/acct-icon.svg" width="30px" alt="Your account">benhoward@post-gazette.com</a></li>
+                <li><a href="#"><i class="fa fa-gear"></i>My account setings</a></li>
+                <li><a href="#"><i class="fa fa-sign-out"></i>Logout</a></li>
+            </ul>
+          </div>
+
+      </div>
+    </section>
+  </nav>            
+
+
+<!-- MAIN TOP NAV -->
   <nav>
     <section class="dash-nav">
       <div class="container">
           
           <div class="one-fifth items-block" id="logo-block">
-            <ul><a href="index.html">
-              <li><img src="images/site-logo.svg" width="110px" alt="Blocmarc"></li></a>
-              <li id="hamburger"><i class="fa fa-bars"></i></li>
-            </ul>
-          </div>
-        
-          <div class="one-fifth items-block">
-            <ul><a href="#">
-              <li>ITEMS</li></a>
+            <ul>
+              <li><a href="index.html"><img src="images/site-logo.svg" width="110px" alt="Blocmarc"></a></li>
+              <li><a id="hamburger" href="#"><i class="fa fa-bars"></i></a></li>
             </ul>
           </div>
 
+          <div class="one-fifth items-block">
+            <ul><a id="menu-trigger-items" href="#">
+              <li>ITEMS</li></a>
+            </ul>
+          </div>          
+
         
           <div class="one-fifth items-block">
-            <ul><a href="#">
+            <ul><a id="menu-trigger-boxes" href="#">
               <li>BOXES</li></a>
             </ul>
           </div>
 
         
           <div class="one-fifth items-block">
-            <ul><a href="#">
+            <ul><a id="menu-trigger-organize" href="#">
               <li>ORGANIZE</li></a>
             </ul>
           </div>
 
         
           <div class="one-fifth items-block">
-            <ul><a href="#">
+            <ul><a id="menu-trigger-acct" href="#">
               <li>BEN HOWARD</li></a>
             </ul>
           </div>
@@ -80,14 +195,34 @@
             </div>
 
             <div class="one-third" id="mobile-add">
-              <a href="#" class="btn-add"><img src="images/add-button.svg" height="69px" alt="Add content"/></a>
+              <ul class="menu">
+              <li>
+                <a href="#" class="btn-add"><img src="images/add-button.svg" height="69px" alt="Add content"/></a>
+                <ul>
+                  <li><a href="#"><i class="fa fa-pencil"></i>Notes</a></li>
+                  <li><a href="#"><i class="fa fa-check"></i>Checklists</a></li>
+                  <li><a href="#"><i class="fa fa-image"></i>Images</a></li>
+                  <li><a href="#"><i class="fa fa-link"></i>Links</a></li>
+                </ul>
+              </li>
+              </ul>
             </div>
 
             <div class="one-third">
-              <ul class="browser-sort">
-              <!--   <li class="btn-browser"><a href="#" class="btn"><i class="fa fa-star"></i>  Download browser extension</a></li>
-                 --><li class="btn-browser"><a href="#" class="btn">Sort <i class="fa fa-sort-asc"></i></a></li>
+              <ul class="menu">
+                <li class="btn-browser">
+                  <a href="#" class="btn">Sort</a>
+                  <ul>
+                    <li><a href="#">Name</a></li>
+                    <li><a href="#">Last modified</a></li>
+                    <li><a href="#">Last modified by me</a></li>
+                    <li><a href="#">Last opened by me</a></li
+                  </ul>
+                </li>
               </ul>
+              <!-- <ul class="browser-sort">
+                <li class="btn-browser"><a href="#" class="btn">Sort <i class="fa fa-sort-asc"></i></a></li>
+              </ul> -->
             </div>
 
           </div> 
@@ -216,7 +351,35 @@
     </div>
     </section>
   </main>
+<script
+  src="https://code.jquery.com/jquery-3.1.1.js"
+  integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA="
+  crossorigin="anonymous"></script>
+  <script src="js/dropit.js"></script>
+  <script type="text/javascript">
+    $(".menu").dropit();
 
+    $( "#menu-trigger-items" ).click(function() {
+      $(".menu-block-items").toggleClass("open", 200);
+    });
+
+    $( "#menu-trigger-boxes" ).click(function() {
+      $(".menu-block-boxes").toggleClass("open", 200);
+    });
+
+    $( "#menu-trigger-organize" ).click(function() {
+      $(".menu-block-organize").toggleClass("open", 200);
+    });
+
+    $( "#menu-trigger-acct" ).click(function() {
+      $(".menu-block-acct").toggleClass("open", 200);
+    });
+
+    $( "#hamburger" ).click(function() {
+      $(".side-nav").toggleClass("open", 200);
+    });
+
+  </script>
 
 </body>
 </html>
