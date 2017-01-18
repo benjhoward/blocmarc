@@ -361,23 +361,44 @@
 
     $( "#menu-trigger-items" ).click(function() {
       $(".menu-block-items").toggleClass("open", 200);
+      $(".menu-block-boxes").removeClass("open", 200);
+      $(".menu-block-organize").removeClass("open", 200);
+      $(".menu-block-acct").removeClass("open", 200);
     });
 
     $( "#menu-trigger-boxes" ).click(function() {
       $(".menu-block-boxes").toggleClass("open", 200);
+      $(".menu-block-items").removeClass("open", 200);
+      $(".menu-block-organize").removeClass("open", 200);
+      $(".menu-block-acct").removeClass("open", 200);
     });
 
     $( "#menu-trigger-organize" ).click(function() {
       $(".menu-block-organize").toggleClass("open", 200);
+      $(".menu-block-boxes").removeClass("open", 200);
+      $(".menu-block-items").removeClass("open", 200);
+      $(".menu-block-acct").removeClass("open", 200);
     });
 
     $( "#menu-trigger-acct" ).click(function() {
       $(".menu-block-acct").toggleClass("open", 200);
+      $(".menu-block-boxes").removeClass("open", 200);
+      $(".menu-block-organize").removeClass("open", 200);
+      $(".menu-block-items").removeClass("open", 200);
+    });
+
+    $( "main" ).click(function() {
+      $(".menu-block-boxes").removeClass("open", 200);
+      $(".menu-block-organize").removeClass("open", 200);
+      $(".menu-block-items").removeClass("open", 200);
+      $(".menu-block-acct").removeClass("open", 200);
+
     });
 
     $( "#hamburger" ).click(function() {
       $(".side-nav").toggleClass("open", 200);
     });
+
 
   </script>
 
