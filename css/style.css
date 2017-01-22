@@ -2,6 +2,7 @@
   overflow-x: hidden;
 }*/
 
+
 body {
   font-family: 'Catamaran', Helvetica, sans-serif;
   color: 000000
@@ -1381,6 +1382,8 @@ footer .copyright h6 {
 .dashboard {
     background: linear-gradient(180deg, rgba(255, 255, 255, 1) 0%, rgb(234, 233, 233) 100%);
     padding-bottom: 60px;
+    max-width: 100%;
+    overflow-x: hidden;
   }
 
 .dashboard nav {
