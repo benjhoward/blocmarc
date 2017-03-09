@@ -1711,6 +1711,15 @@ footer .copyright h6 {
 
 }
 
+.content-item:hover {
+  background: #e6e6e6;
+  -moz-transition: none !important;
+    -webkit-transition: none !important;
+    transition: none !important;
+    -webkit-transition-delay: none !important;
+    -moz-transition-delay: none !important;
+    transition-delay: none !important;
+}
 
 .item-box img {
     position: absolute;
@@ -1719,6 +1728,10 @@ footer .copyright h6 {
     height: 112%;
     width: auto;
      }
+
+.item-box img:hover {
+  opacity: .5;
+}
 
 .item-box a {
   text-decoration: none;
