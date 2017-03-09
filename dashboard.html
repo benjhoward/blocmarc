@@ -471,6 +471,27 @@
     });
 
 
+    //ANIMATION
+
+    var boxesArray = document.getElementsByClassName('content-item');
+
+      var animateBoxes = function(boxes) { 
+           for (var i = 0; i < boxes.length; i++){
+           var revealBox = function() {
+               boxes[i].style.opacity = 1;
+               boxes[i].style.transform = "rotate(0deg) translateY(0)";
+               boxes[i].style.msTransform = "rotate(0deg) translateY(0)";
+               boxes[i].style.WebkitTransform = "rotate(0deg) translateY(0)";
+           };
+          revealBox();
+      }
+      };
+
+      window.onload = function() {
+        animateBoxes(boxesArray);
+      }
+
+
   </script>
 
 </body>
