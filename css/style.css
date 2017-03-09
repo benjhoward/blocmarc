@@ -1696,9 +1696,9 @@ footer .copyright h6 {
     padding: 20px;
     opacity: 0;
 
-     -webkit-transform: scaleY(-1) translateY(20rem);
-     -moz-transform: scaleY(-1) translateY(20rem);
-     transform: scaleY(-1) translateY(20rem);
+     -webkit-transform: scaleY(-1) translateY(-20rem);
+     -moz-transform: scaleY(-1) translateY(-20rem);
+     transform: scaleY(-1) translateY(-20rem);
      /*-webkit-transform: rotate(180deg) translateY(3rem);
      -moz-transform: rotate(180deg) translateY(3rem);
      transform: rotate(180deg) translate(3rem);*/
